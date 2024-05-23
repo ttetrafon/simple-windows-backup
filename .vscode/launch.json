@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backup",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}\\src\\main.py",
+      "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "cwd": "${workspaceFolder}\\src\\",
+      "console": "integratedTerminal",
+      "args": []
+    }
+  ]
+}
