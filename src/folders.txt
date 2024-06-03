@@ -1,0 +1,4 @@
+C:/Users/ttetr/.aws
+C:/Users/ttetr/AppData/LocalLow/ZAUM Studio
+C:/Users/ttetr/AppData/Roaming/Blender Foundation/Blender
+C:/Users/ttetr/AppData/Roaming/endless-sky/saves

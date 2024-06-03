@@ -1,0 +1,2 @@
+C:/Users/ttetr/AppData/Roaming/Code/User/settings.json
+C:/Users/ttetr/AppData/Roaming/endless-sky/preferences.txt

@@ -2,22 +2,20 @@ import os, shutil
 from pathlib import Path
 from typing import List
 
-source_directories: List[str] = [
-  'C:/Users/ttetr/.aws',
-  'C:/Users/ttetr/AppData/LocalLow/ZAUM Studio',
-  'C:/Users/ttetr/AppData/Roaming/Blender Foundation/Blender',
-  'C:/Users/ttetr/AppData/Roaming/endless-sky/saves'
-]
-source_files: List[str] = [
-  'C:/Users/ttetr/AppData/Roaming/Code/User/settings.json',
-  'C:/Users/ttetr/AppData/Roaming/endless-sky/preferences.txt'
-]
+source_directories: List[str] = []
+with open('./folders.txt') as folders_input:
+  source_directories = folders_input.read().splitlines()
+
+source_files: List[str] = []
+with open('./files.txt') as files_input:
+  source_files = files_input.read().splitlines()
+
 target_directory: str = 'C:/Users/ttetr/OneDrive/Backup/automated'
 
 
 def main() -> None:
   for file in source_files:
-    source = Path(file)
+    source = Path(file.strip())
     root = os.path.dirname(source)[2:]
     name = os.path.basename(source)
     destination = Path(target_directory + root + '//' + name)
